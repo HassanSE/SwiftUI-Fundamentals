@@ -12,6 +12,9 @@ struct ContentView: View {
         ZStack {
             LinearGradient(colors: [.blue, .white], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Lahore, PK")
+            }
         }
     }
 }
