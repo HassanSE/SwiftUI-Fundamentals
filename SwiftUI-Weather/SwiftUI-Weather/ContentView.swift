@@ -14,6 +14,20 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("Lahore, PK")
+                    .font(.system(size: 32, weight: .medium))
+                    .foregroundColor(.white)
+                    .padding()
+                VStack(spacing: 0) {
+                    Image(systemName: "cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 150)
+                    Text("32°")
+                        .font(.system(size: 70, weight: .medium))
+                        .foregroundColor(.white)
+                }
+                Spacer()
             }
         }
     }
