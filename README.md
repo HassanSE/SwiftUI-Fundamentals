@@ -10,5 +10,7 @@ An entry level course from Sean Allen on SwiftUI
 
 - SwiftUI is declarative, and therefore, requires every state of the UI to be implemented upfront.
 - SwiftUI uses view tree structure to render the change in data.
-- A tree diff-ing algorithm scans the view tree to only update the specific view(s) that are/should be affected by the data change. The body of this affect view is then redrawn.  
+- A tree diff-ing algorithm scans the view tree to only update the specific view(s) that are/should be affected by the data change. The body of this affect view is then redrawn.
+
+- @ViewBuilder is the closure that is used to provide content for the view you're defining.
 
