@@ -14,13 +14,14 @@ struct FrameworkGridView: View {
                                GridItem(.flexible())]
     
     var body: some View {
-        LazyVGrid(columns: columns) {
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworkTitleView(name: framework.name, imageName: framework.imageName)
+                    }
+                }
+            }.navigationTitle("🍎 Frameworks")
         }
     }
 }
@@ -28,6 +29,7 @@ struct FrameworkGridView: View {
 struct FrameworkGridView_Previews: PreviewProvider {
     static var previews: some View {
         FrameworkGridView()
+            .preferredColorScheme(.dark)
     }
 }
 
@@ -46,5 +48,6 @@ struct FrameworkTitleView: View {
                 .scaledToFit()
                 .minimumScaleFactor(0.5)
         }
+        .padding()
     }
 }
