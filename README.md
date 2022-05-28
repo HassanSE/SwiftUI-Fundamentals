@@ -20,3 +20,7 @@ An entry level course from Sean Allen on SwiftUI
 - Each modifier wraps the original view in another view.
 - When you are adding a modifier to the view, keep in mind that it does not get added directly on the original view. Instead, each modifier is added to the combined result of previously used modifiers on the view.
 
+## Hashable & Identifiable
+- When you are using a custom model for data binding, SwiftUI requires your model to conform to Hashable to keep track of uniqueness and update the UI according to the update in data.
+- If you additional conform to Identifiable, SwiftUI would look for a property named `id` on your model and you don't have to specify the KeyPath yourself.
+
