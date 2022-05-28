@@ -31,4 +31,8 @@ An entry level course from Sean Allen on SwiftUI
 
 ## @StateObject vs @ObservedObject
 - @StateObject is used when you initialize an object, however, @ObservedObject is used when you inject an object.
+- Why do we use @StateObject property wrapper? Because in SwiftUI, views are lightweight and disposed and recreated all the time. This property wrapper preserves the state of the underlying object while the view is recreated.
+
+## @Published
+- You add this wrapper to those properties that needs to announce the change in their state to the views and in turn force them to reload.
 
