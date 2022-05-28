@@ -24,3 +24,11 @@ An entry level course from Sean Allen on SwiftUI
 - When you are using a custom model for data binding, SwiftUI requires your model to conform to Hashable to keep track of uniqueness and update the UI according to the update in data.
 - If you additional conform to Identifiable, SwiftUI would look for a property named `id` on your model and you don't have to specify the KeyPath yourself.
 
+## @ObservableObject
+- In SwiftUI, you usually conform your ViewModel to ObservableObject.
+- What it allows is to publish the change in its state.
+- The views listening to ViewModel can therefore change their state.
+
+## @StateObject vs @ObservedObject
+- @StateObject is used when you initialize an object, however, @ObservedObject is used when you inject an object.
+
