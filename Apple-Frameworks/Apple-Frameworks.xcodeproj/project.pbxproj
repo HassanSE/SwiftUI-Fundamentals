@@ -13,6 +13,7 @@
 		87C0C5322842238C001E5206 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C0C5312842238C001E5206 /* FrameworkDetailView.swift */; };
 		87F910A62841EC3400B3965A /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F910A52841EC3300B3965A /* Framework.swift */; };
 		87F910A82841EF5A00B3965A /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F910A72841EF5A00B3965A /* FrameworkGridView.swift */; };
+		87FC2CD128427E210026A8C1 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		87C0C5312842238C001E5206 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		87F910A52841EC3300B3965A /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		87F910A72841EF5A00B3965A /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				874C31EB284145030013128A /* Apple_FrameworksApp.swift */,
+				87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */,
 				87F910A72841EF5A00B3965A /* FrameworkGridView.swift */,
 				87C0C5312842238C001E5206 /* FrameworkDetailView.swift */,
 				87F910A52841EC3300B3965A /* Framework.swift */,
@@ -147,6 +150,7 @@
 				87F910A82841EF5A00B3965A /* FrameworkGridView.swift in Sources */,
 				87F910A62841EC3400B3965A /* Framework.swift in Sources */,
 				874C31EC284145030013128A /* Apple_FrameworksApp.swift in Sources */,
+				87FC2CD128427E210026A8C1 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
