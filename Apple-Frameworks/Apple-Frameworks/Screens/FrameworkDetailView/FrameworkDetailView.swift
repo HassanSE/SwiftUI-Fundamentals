@@ -34,7 +34,7 @@ struct FrameworkDetailView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            Spacer()
+            .padding()
         }
         .sheet(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
