@@ -11,6 +11,7 @@
 		874C31F0284145080013128A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874C31EF284145080013128A /* Assets.xcassets */; };
 		874C31F3284145080013128A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874C31F2284145080013128A /* Preview Assets.xcassets */; };
 		87C0C5322842238C001E5206 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C0C5312842238C001E5206 /* FrameworkDetailView.swift */; };
+		87C87CB72845048200BA3D92 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C87CB62845048200BA3D92 /* SafariView.swift */; };
 		87F910A62841EC3400B3965A /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F910A52841EC3300B3965A /* Framework.swift */; };
 		87F910A82841EF5A00B3965A /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F910A72841EF5A00B3965A /* FrameworkGridView.swift */; };
 		87FC2CD128427E210026A8C1 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */; };
@@ -22,6 +23,7 @@
 		874C31EF284145080013128A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874C31F2284145080013128A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87C0C5312842238C001E5206 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		87C87CB62845048200BA3D92 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		87F910A52841EC3300B3965A /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		87F910A72841EF5A00B3965A /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				874C31EB284145030013128A /* Apple_FrameworksApp.swift */,
 				87FC2CD028427E210026A8C1 /* FrameworkGridViewModel.swift */,
+				87C87CB62845048200BA3D92 /* SafariView.swift */,
 				87F910A72841EF5A00B3965A /* FrameworkGridView.swift */,
 				87C0C5312842238C001E5206 /* FrameworkDetailView.swift */,
 				87F910A52841EC3300B3965A /* Framework.swift */,
@@ -150,6 +153,7 @@
 				87F910A82841EF5A00B3965A /* FrameworkGridView.swift in Sources */,
 				87F910A62841EC3400B3965A /* Framework.swift in Sources */,
 				874C31EC284145030013128A /* Apple_FrameworksApp.swift in Sources */,
+				87C87CB72845048200BA3D92 /* SafariView.swift in Sources */,
 				87FC2CD128427E210026A8C1 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
