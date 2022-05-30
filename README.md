@@ -36,3 +36,6 @@ An entry level course from Sean Allen on SwiftUI
 ## @Published
 - You add this wrapper to those properties that needs to announce the change in their state to the views and in turn force them to reload.
 
+## UIViewControllerRepresentable
+- Conform to this protocol when you want to integrate a UIKit's UIViewController into SwiftUI project.
+
