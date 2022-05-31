@@ -26,15 +26,12 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                Text("Learn More")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .frame(width: 280, height: 50)
-                    .background(.red)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                Label("Learn More", systemImage: "book.fill")
             }
-            .padding()
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .buttonBorderShape(.capsule)
+            .tint(.red)
         }
         .sheet(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
