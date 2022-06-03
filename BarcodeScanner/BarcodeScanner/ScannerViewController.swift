@@ -9,8 +9,14 @@ import Foundation
 import AVFoundation
 import UIKit
 
+enum CameraError: String, Error {
+    case invalidDeviceInput  = "Something is wrong with the camera. We are unable to capture the input."
+    case invalidScannedValue = "The value scanned is not valid. This app scans EAN-8 and EAN-13."
+}
+
 protocol ScannerViewControllerDelegate: AnyObject {
     func didScan(barcode: String)
+    func didFail(error: CameraError)
 }
 
 final class ScannerViewController: UIViewController {
@@ -19,16 +25,21 @@ final class ScannerViewController: UIViewController {
     weak var scannerDelegate: ScannerViewControllerDelegate?
     
     private func setupCaptureSession() {
-        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
+        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
+            scannerDelegate?.didFail(error: .invalidDeviceInput)
+            return
+        }
         let videoInput: AVCaptureDeviceInput
         do {
             try videoInput = AVCaptureDeviceInput(device: videoCaptureDevice)
         } catch {
+            scannerDelegate?.didFail(error: .invalidDeviceInput)
             return
         }
         if captureSession.canAddInput(videoInput) {
             captureSession.addInput(videoInput)
         } else {
+            scannerDelegate?.didFail(error: .invalidDeviceInput)
             return
         }
         let metaDataOutput = AVCaptureMetadataOutput()
@@ -37,6 +48,7 @@ final class ScannerViewController: UIViewController {
             metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             metaDataOutput.metadataObjectTypes = [.ean8, .ean13]
         } else {
+            scannerDelegate?.didFail(error: .invalidDeviceInput)
             return
         }
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
@@ -48,9 +60,12 @@ final class ScannerViewController: UIViewController {
 
 extension ScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        guard let object = metadataObjects.first else { return }
-        guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else { return }
-        guard let barcode = machineReadableObject.stringValue else { return }
+        guard let object = metadataObjects.first,
+              let machineReadableObject = object as? AVMetadataMachineReadableCodeObject,
+              let barcode = machineReadableObject.stringValue else {
+            scannerDelegate?.didFail(error: .invalidScannedValue)
+            return
+        }
         scannerDelegate?.didScan(barcode: barcode)
     }
 }
