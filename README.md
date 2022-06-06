@@ -39,3 +39,8 @@ An entry level course from Sean Allen on SwiftUI
 ## UIViewControllerRepresentable
 - Conform to this protocol when you want to integrate a UIKit's UIViewController into SwiftUI project.
 
+## Entry point
+- In SwiftUI, the entry point type of an app is marked with @main.
+- This type must provide a main function that doesn't take any arguments and returns Void.
+- This type also conforms to `App`, which provides implementation of `main()` in an extension.
+
