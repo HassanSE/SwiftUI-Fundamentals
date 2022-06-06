@@ -13,6 +13,7 @@ struct AccountView: View {
             Text("Account View")
                 .navigationTitle("🙂 Account")
         }
+        .navigationViewStyle(.stack)
     }
 }
 

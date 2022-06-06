@@ -13,6 +13,7 @@ struct AppetizerListView: View {
             Text("Appetizer List View")
                 .navigationTitle("🍟 Appetizers")
         }
+        .navigationViewStyle(.stack)
     }
 }
 

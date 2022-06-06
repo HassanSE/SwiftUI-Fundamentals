@@ -13,6 +13,7 @@ struct OrderView: View {
             Text("Order View")
                 .navigationTitle("🧾 Orders")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
