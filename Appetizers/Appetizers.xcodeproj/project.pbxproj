@@ -19,6 +19,7 @@
 		875F9672284E60C0007A5885 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F9671284E60C0007A5885 /* AccountView.swift */; };
 		875F9674284E60C7007A5885 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F9673284E60C7007A5885 /* OrderView.swift */; };
 		875F9676284E707F007A5885 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F9675284E707E007A5885 /* Appetizer.swift */; };
+		87E896092851120E00339999 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E896082851120E00339999 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		875F9671284E60C0007A5885 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		875F9673284E60C7007A5885 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		875F9675284E707E007A5885 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		87E896082851120E00339999 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				875F9663284E5FB4007A5885 /* AppetizerTabView.swift */,
 				875F966F284E60B7007A5885 /* AppetizerListView.swift */,
 				875B0A4E284FD30E004BEE40 /* AppetizerListViewModel.swift */,
+				87E896082851120E00339999 /* Alert.swift */,
 				875B0A4A284FC964004BEE40 /* NetworkManager.swift */,
 				875B0A4C284FCA7C004BEE40 /* APError.swift */,
 				875B0A48284FC651004BEE40 /* AppetizerListCell.swift */,
@@ -169,6 +172,7 @@
 				875F9664284E5FB4007A5885 /* AppetizerTabView.swift in Sources */,
 				875B0A4B284FC964004BEE40 /* NetworkManager.swift in Sources */,
 				875F9662284E5FB4007A5885 /* AppetizersApp.swift in Sources */,
+				87E896092851120E00339999 /* Alert.swift in Sources */,
 				875F9670284E60B7007A5885 /* AppetizerListView.swift in Sources */,
 				875F9674284E60C7007A5885 /* OrderView.swift in Sources */,
 			);
