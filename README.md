@@ -44,3 +44,9 @@ An entry level course from Sean Allen on SwiftUI
 - This type must provide a main function that doesn't take any arguments and returns Void.
 - This type also conforms to `App`, which provides implementation of `main()` in an extension.
 
+## UIViewRepresentable
+- If you want to use a view from UIKit into SwiftUI codebase, you can conform your struct to `UIViewRepresentable`.
+- For example, at the time of this writing, SwiftUI does not have any loading view. So we can borrow UIActivityIndicator from UIKit like so: 
+
+`struct LoadingView: UIViewRepresentable`
+
