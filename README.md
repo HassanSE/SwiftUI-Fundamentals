@@ -46,7 +46,5 @@ An entry level course from Sean Allen on SwiftUI
 
 ## UIViewRepresentable
 - If you want to use a view from UIKit into SwiftUI codebase, you can conform your struct to `UIViewRepresentable`.
-- For example, at the time of this writing, SwiftUI does not have any loading view. So we can borrow UIActivityIndicator from UIKit like so: 
-
-`struct LoadingView: UIViewRepresentable`
+- For example, at the time of this writing, SwiftUI does not have any loading view. So we can borrow UIActivityIndicator from UIKit like so: `struct LoadingView: UIViewRepresentable`
 
