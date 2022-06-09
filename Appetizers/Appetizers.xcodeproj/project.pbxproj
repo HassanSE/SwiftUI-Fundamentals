@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870BC075285270CB00ADBEE7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870BC074285270CB00ADBEE7 /* LoadingView.swift */; };
+		870BC077285272D600ADBEE7 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870BC076285272D600ADBEE7 /* Color+Ext.swift */; };
 		875B0A49284FC651004BEE40 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B0A48284FC651004BEE40 /* AppetizerListCell.swift */; };
 		875B0A4B284FC964004BEE40 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B0A4A284FC964004BEE40 /* NetworkManager.swift */; };
 		875B0A4D284FCA7C004BEE40 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B0A4C284FCA7C004BEE40 /* APError.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		870BC074285270CB00ADBEE7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		870BC076285272D600ADBEE7 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		875B0A48284FC651004BEE40 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		875B0A4A284FC964004BEE40 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		875B0A4C284FCA7C004BEE40 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				875F966F284E60B7007A5885 /* AppetizerListView.swift */,
 				875B0A4E284FD30E004BEE40 /* AppetizerListViewModel.swift */,
 				87E896082851120E00339999 /* Alert.swift */,
+				870BC074285270CB00ADBEE7 /* LoadingView.swift */,
+				870BC076285272D600ADBEE7 /* Color+Ext.swift */,
 				875B0A4A284FC964004BEE40 /* NetworkManager.swift */,
 				875B0A4C284FCA7C004BEE40 /* APError.swift */,
 				875B0A48284FC651004BEE40 /* AppetizerListCell.swift */,
@@ -168,7 +174,9 @@
 				875B0A4D284FCA7C004BEE40 /* APError.swift in Sources */,
 				875B0A49284FC651004BEE40 /* AppetizerListCell.swift in Sources */,
 				875B0A4F284FD30E004BEE40 /* AppetizerListViewModel.swift in Sources */,
+				870BC077285272D600ADBEE7 /* Color+Ext.swift in Sources */,
 				875F9672284E60C0007A5885 /* AccountView.swift in Sources */,
+				870BC075285270CB00ADBEE7 /* LoadingView.swift in Sources */,
 				875F9664284E5FB4007A5885 /* AppetizerTabView.swift in Sources */,
 				875B0A4B284FC964004BEE40 /* NetworkManager.swift in Sources */,
 				875F9662284E5FB4007A5885 /* AppetizersApp.swift in Sources */,

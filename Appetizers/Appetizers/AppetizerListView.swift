@@ -10,13 +10,18 @@ import SwiftUI
 struct AppetizerListView: View {
     @StateObject private var viewModel = AppetizerListViewModel()
     var body: some View {
-        NavigationView {
-            List(viewModel.appetizers) { appetizer in
-                AppetizerListCell(appetizer: appetizer)
+        ZStack {
+            NavigationView {
+                List(viewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
+                }
+                .navigationTitle("🍟 Appetizers")
             }
-            .navigationTitle("🍟 Appetizers")
+            .navigationViewStyle(.stack)
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
-        .navigationViewStyle(.stack)
         .onAppear {
             viewModel.getAppetizers()
         }
