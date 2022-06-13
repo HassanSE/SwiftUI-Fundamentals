@@ -24,6 +24,7 @@
 		875F9676284E707F007A5885 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875F9675284E707E007A5885 /* Appetizer.swift */; };
 		879D1BF528548F29003C2EA1 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D1BF428548F29003C2EA1 /* AppetizerDetailView.swift */; };
 		87E896092851120E00339999 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E896082851120E00339999 /* Alert.swift */; };
+		87EF4D0528578F5700E5542F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF4D0428578F5700E5542F /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		875F9675284E707E007A5885 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		879D1BF428548F29003C2EA1 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		87E896082851120E00339999 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		87EF4D0428578F5700E5542F /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				871FE7EB28545D1F003F3A0E /* RemoteImage.swift */,
+				87EF4D0428578F5700E5542F /* PrimaryButton.swift */,
 				879D1BF328548CA9003C2EA1 /* Cells */,
 				879D1BF228548C91003C2EA1 /* UIKitComponents */,
 			);
@@ -286,6 +289,7 @@
 				875F9662284E5FB4007A5885 /* AppetizersApp.swift in Sources */,
 				87E896092851120E00339999 /* Alert.swift in Sources */,
 				875F9670284E60B7007A5885 /* AppetizerListView.swift in Sources */,
+				87EF4D0528578F5700E5542F /* PrimaryButton.swift in Sources */,
 				875F9674284E60C7007A5885 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
