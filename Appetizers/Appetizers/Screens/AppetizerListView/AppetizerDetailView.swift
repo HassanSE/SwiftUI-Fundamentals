@@ -12,8 +12,7 @@ struct AppetizerDetailView: View {
     @Binding var isShowingDetail: Bool
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            RemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 225)
                 .clipped()
